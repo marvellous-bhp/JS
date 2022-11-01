@@ -1,0 +1,153 @@
+body {
+  top: 0;
+  margin: 0;
+}
+
+.heading {
+  height: auto;
+  padding: 30px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 40px;
+  color: brown;
+  display: inline;
+}
+
+.wrapper {
+  max-width: 780px;
+  box-shadow: 0 0 5px #ccc;
+  border: 5px solid #fff;
+  background: #fff;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+.viewport {
+  position: relative;
+  height: 300px;
+}
+.container{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.slider-image {
+  width: 780px;
+  height: 300px;
+  /* position: absolute; */
+}
+/* .slider-image:not(.active){
+  display: none;
+} */
+.active{
+  display: block;
+}
+
+
+
+.control {
+  z-index: 99;
+}
+.fa-solid{
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+}
+.prev-button {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  outline: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-indent: -9999px;
+  z-index: 9999;
+  left: 10px;
+  background: url("./public/img/controls.png") no-repeat 0 -32px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  cursor: pointer;
+}
+
+.prev-button:hover {
+  background-position: 0 0;
+}
+
+.next-button {
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  outline: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-indent: -9999px;
+  z-index: 9999;
+  right: 10px;
+  background: url("./public/img/controls.png") no-repeat -43px -32px;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.next-button:hover {
+  background-position-y: 0;
+}
+.arrow {
+  position: absolute;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  width: 36px;
+  height: 36px;
+}
+.arrow:hover{
+  background-color: rgba(80,81,79);
+}
+
+.container-dots {
+  text-align: center;
+  font-size: 0.85em;
+  font-family: Arial;
+  font-weight: bold;
+  color: #666;
+  position: absolute;
+  bottom: -30px;
+  width: 100%;
+  margin-bottom: 150px;
+}
+
+.dot {
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.dot a {
+  background: #666;
+  text-indent: -9999px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  outline: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.active a {
+  background: cadetblue;
+}
+
+.dot a:hover {
+  background: cadetblue;
+}
