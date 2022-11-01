@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    color: #fff;
+    background: #333;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.container {
+    width: 500px;
+    margin: 40px auto;
+}
+
+#slider-container {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    padding: 2px;
+    border: #666 solid 1px;
+}
+
+#slider-container #slider {
+    width: 100%;
+    height: 100%;
+}
+
+#slider-container .slide {
+    opacity: 0;
+}
+
+#slider-container .slide,
+#slider-container .slide img {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+#slider-container .slide .caption {
+    width: 100%;
+    height: 30px;
+    background-color: rgba(186, 187, 113, 0.884);
+    color: #fff;
+    font-size: 14px;
+    line-height: 30px;
+    padding-left: 4px;
+    position: absolute;
+    bottom: 2px;
+    z-index: 9999;
+}
+
+#slider-container .slide.active {
+    display: inline-block;
+    opacity: 1;
+}
+
+#slider-container .slide.active img {
+    display: inline-block;
+}
+
+#dot-container {
+    width: 100%;
+    position: absolute;
+    bottom: -20px;
+    z-index: 99;
+}
+
+#dot-container .dots {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+#dot-container .dots button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#dot-container .dots .active {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.left,
+.right {
+    position: absolute;
+    top: 132px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.left {
+    left: -15px;
+}
+
+.right {
+    right: -15px;
+}
+
+.arrow {
+    border: none;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 36px;
+    height: 36px;
+}
