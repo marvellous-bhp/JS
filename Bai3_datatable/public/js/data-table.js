@@ -80,20 +80,16 @@ export default class DataTable {
         if (keyword === "") {
             return this.#data;
         }
-
         keyword = keyword.toLowerCase();
-
         const res = [];
-
         for (let obj of this.#data) {
             for (let property in obj) {
-                if ((obj[property] + "").toLowerCase().includes(keyword)) {
+                if ((property !== "id")&&(obj[property] + "").toLowerCase().includes(keyword)) {
                     res.push(obj);
                     break;
                 }
             }
         }
-
         return res;
     };
 

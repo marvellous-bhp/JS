@@ -19,6 +19,14 @@ $(document).ready(function () {
             this.value
         );
     });
+    
+        // $("#search").on("keyup", function() {
+        //   var value = $(this).val().toLowerCase();
+        //   $("#table-data tr").filter(function() {
+        //     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        //   });
+        // });
+      
     $("th").on("click", function () {
         dataTable.sortByField(this.id, this.value);
         this.value = this.value === "desc" ? "asc" : "desc";
