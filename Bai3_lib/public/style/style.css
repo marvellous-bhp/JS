@@ -1,0 +1,113 @@
+body {
+    background: white;
+    font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+    
+}
+
+h1, h2 {
+    text-align: center;
+    color: black;
+}
+
+h2 a {
+    color: #0184e3;
+    text-decoration: none;
+}
+
+h2 a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 1000px;
+    margin: auto;
+    font-size: 16px;
+}
+
+.container h3 {
+    font-size: 20px;
+    }
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;  
+}
+td{
+    padding: 5px;
+}
+#table{
+    padding: 10px;
+    width: 100% !important;
+}
+#table_length label{
+    margin-left: 700px;
+}
+#table_length select{
+    cursor: pointer;
+}
+#table_filter{
+    padding-bottom: 10px;
+}
+#table_info{
+    padding-top: 10px;
+}
+#table_paginate{
+    padding-top: 10px;
+}
+#table_paginate a{
+    padding-right: 3px;
+    cursor: pointer;
+}
+.paginate_button {
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.paginate_button:hover{
+    background-color: aquamarine;
+}
+.current{
+    background-color: aqua;
+}
+
+#content {
+    border: solid 2px #CCC;
+    padding: 10px;
+    background-color: #FFF;
+}
+
+#content p {
+        color: aquamarine;
+        margin: 5px;
+        padding: 5px;
+    }
+
+#content > p {
+        color: orange;
+        margin: 5px;
+    }
+
+#content #table2 tr {
+        background-color: #f1ebeb;
+    }
+
+#content #table3 tr {
+        background-color: #c5f3c8;
+    }
+
+#content #table4 tr {
+        background-color: #f3c5f3;
+    }
+
+#reset {
+    padding: 5px 10px;
+    background: #4CAF50;
+    border: none;
+    color: #FFF;
+    cursor: pointer;
+}
+
+#reset:hover {
+        color: #4CAF50;
+        background: #FFF;
+    }
