@@ -42,4 +42,23 @@ hieu_ung_danh_chu.prototype.ham_danh_chu = function() {
    setTimeout(() => this.ham_danh_chu(), toc_do_danh_chu);
 }
 
+    var index = 0;
+    
+
+    $(".sq").click(function () {
+        index = $(this).attr("idx");
+        changeImg(index);
+    });
+
+function changeImg(index) {
+    
+    $(".slide").fadeOut(500);
+    $(".slide").removeClass("active");
+    $(".slide").eq(index).fadeIn(500);
+    $(".slide").eq(index).addClass("active");
+    $(".sq").removeClass("active");
+    $(".sq").eq(index).addClass("active");
+
+};
+
 
